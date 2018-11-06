@@ -169,11 +169,7 @@ The interface  builds the object on the first call, and always returns the same 
 
 The following class diagram illustrates this mechanism:
 
-<!-- ![singleton class diagram](/static/assets/img/blog/cpp/singleton_example/singleton.png "Singleton class diagram") -->
-
-<p align="center">
-  <img src="/static/assets/img/blog/cpp/singleton_example/singleton.png">
-</p>
+![singleton class diagram](https://hnrck.io/static/assets/img/blog/cpp/singleton_example/singleton.png "Singleton class diagram")
 
 In this diagram, the instance is a Singleton object belonging to the Singleton class.
 The `get_instance` class method allows to build this instance on the first call, via the private constructor, and to return this same singleton every call.
@@ -186,11 +182,7 @@ Let's get to the crux of the matter, the implementation of an example of a singl
 
 We will first focus on the elements essential to any class, constructors and destructors, then deal with the addition of the instance and the get_instance method, and finally add the functionalities of the Logger.
 
-<!-- ![Logger class diagram](/static/assets/img/blog/cpp/singleton_example/logger.png "Logger class diagram") -->
-
-<p align="center">
-  <img src="/static/assets/img/blog/cpp/singleton_example/logger.png">
-</p>
+![Logger class diagram](https://hnrck.io/static/assets/img/blog/cpp/singleton_example/logger.png "Logger class diagram")
 
 The Logger should be a singleton; its class diagram strongly resembles the singleton ones, and the pattern of the singleton can be figured behind it.
 We add a print method as requested, which takes a log level and a message and displays them.
