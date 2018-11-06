@@ -2,7 +2,7 @@
 
 #include <sstream>
 
-// Initialization of the display pointer, a pointer to std::cout.
+// Initialization of the display pointer.
 std::ostream *Logger::p_output_ = nullptr;
 
 // Initialization of the display protection mutex.
